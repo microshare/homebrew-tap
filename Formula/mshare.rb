@@ -5,21 +5,21 @@
 class Mshare < Formula
   desc "Command-line tool for the Microshare IoT platform"
   homepage "https://github.com/microshare/mshare-cli"
-  version "1.0.12"
+  version "1.0.13"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/microshare/homebrew-tap/releases/download/v1.0.12/mshare_1.0.12_darwin_amd64.tar.gz"
-      sha256 "18d15455f342945cd3858db9b5cbd0bd2e9942500360aebfef63801ed858f924"
+      url "https://github.com/microshare/homebrew-tap/releases/download/v1.0.13/mshare_1.0.13_darwin_amd64.tar.gz"
+      sha256 "ea21aa1260c189635a2f217f05e21ef5a427f4678c4af562fe5537665492da31"
 
       define_method(:install) do
         bin.install "mshare"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/microshare/homebrew-tap/releases/download/v1.0.12/mshare_1.0.12_darwin_arm64.tar.gz"
-      sha256 "7ddd927868c44f0e7ed5d7746f0bd1b7a742fb2dbb522b9c56ac52e9cd417821"
+      url "https://github.com/microshare/homebrew-tap/releases/download/v1.0.13/mshare_1.0.13_darwin_arm64.tar.gz"
+      sha256 "d9af516f5f9946780311417c5408e4df5d9192e7ad176f6e8789f223f7d9eff7"
 
       define_method(:install) do
         bin.install "mshare"
@@ -29,15 +29,15 @@ class Mshare < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/microshare/homebrew-tap/releases/download/v1.0.12/mshare_1.0.12_linux_amd64.tar.gz"
-      sha256 "dba27647dadd5290b810b75787b988679d2379e18daaca25ce71e19842224a72"
+      url "https://github.com/microshare/homebrew-tap/releases/download/v1.0.13/mshare_1.0.13_linux_amd64.tar.gz"
+      sha256 "bba63fb5623612cdb909ef2386c2225202d7d98afc0b8a0b54bcf12c039b93f2"
       define_method(:install) do
         bin.install "mshare"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/microshare/homebrew-tap/releases/download/v1.0.12/mshare_1.0.12_linux_arm64.tar.gz"
-      sha256 "b243ec954b9005bfa9a878403ed970bbfedd55cf58c9f9163d121287625098a6"
+      url "https://github.com/microshare/homebrew-tap/releases/download/v1.0.13/mshare_1.0.13_linux_arm64.tar.gz"
+      sha256 "9e63ee5bc7f54b5905861f613d5032b44db2fc8bff6b086d8d02908af79622b2"
       define_method(:install) do
         bin.install "mshare"
       end
